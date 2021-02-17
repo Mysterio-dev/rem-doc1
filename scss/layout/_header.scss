@@ -1,0 +1,152 @@
+
+$dark: #1b193e;
+$white: #ffffff;
+
+
+
+
+.header {
+    background-color: #fff;
+    &__contacts {
+        display: flex;
+    }
+
+    &__wrappers {
+        transition: all 0.5s ease; 
+    }
+
+    &__wrappers.active {
+        margin-top: -99px; 
+    }
+
+    &__navbar {
+        font-size: 14px;
+        background: #FAFAFA;
+    }
+
+    &__navbar .navbar-brand {
+        font-weight: 700;
+        display: none;
+    }
+
+    &__navbar .dropdown-menu {
+        border-radius: 0;
+        border: 0;
+        font-size: 14px;
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        margin: 0;
+    }
+
+    &__navbar .dropdown-item:hover {
+        background-color: $dark;
+        color: $white;
+    }
+
+
+    &__navbar .dropdown-item.active {
+        background-color: $dark;
+    }
+    
+
+    &__wrap-icons {
+        background-color: $dark;
+        padding: 7px;
+        border-radius: 50%;
+        display: flex;
+    }
+
+    &__wrap-icons svg {
+        color: #fff;
+    }
+
+    &__social-link {
+        height: 37px;
+        width: 37px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #EEF3F8;
+    }
+
+    &__phone {
+        margin-right: 15px;
+    }
+
+    &__phone,
+    &__mail {
+        display: flex;
+        align-items: center;
+    }
+    
+
+    &__social {
+        display: flex;
+    }
+
+    &__social-link {
+        margin-right: 12px;
+    }
+
+    &__social-link:last-child {
+        margin-right: 20px;
+    }
+
+    &__social-link svg {
+        color: $dark
+    }
+
+    &__phone a,
+    &__mail a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.55);
+        margin-left: 5px;
+        &:hover {
+            color: #222133;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__inner .btn-request {
+        border: 2px solid $dark;
+        border-radius: 0;
+        font-size: 14px;
+        color: #222133;
+        &:hover {
+            background-color: $dark;
+            color: $white;
+        }
+
+    }
+
+    &__inner .btn:focus {
+        box-shadow: none;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    &__logo img {
+        max-width: 48px;
+        width: 100%;
+    }
+
+    &__logo span {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    
+    
+}
+
+
+
